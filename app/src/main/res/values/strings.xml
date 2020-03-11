@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TaskTest</string>
+    <string name="et_time">Input time</string>
+    <string name="start">Start</string>
+    <string name="restart">Restart</string>
+    <string name="timer_is_stop">Timer is stop</string>
+</resources>

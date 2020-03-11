@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/start"
+    android:background="@color/grey_hint_login">
+
+    <FrameLayout
+        android:id="@+id/vg_child_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/field_height">
+
+        <ProgressBar
+            android:id="@+id/pg_bar_my"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="top"
+            android:max="100"
+            android:progress="100" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:layout_marginStart="@dimen/field_height"
+            android:layout_marginEnd="@dimen/field_height"
+            android:layout_marginBottom="@dimen/field_height"
+            android:background="@drawable/border_wite"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="@string/et_time"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@color/grey_edit_text"
+            android:textColorHint="@color/grey_hint_login"
+            android:textSize="14sp"/>
+
+        <Button
+            android:onClick="onclick"
+            android:id="@+id/start_timer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/field_height"
+            android:layout_marginStart="@dimen/field_height"
+            android:layout_marginEnd="@dimen/field_height"
+            android:layout_gravity="center"
+            android:text="@string/start" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="@dimen/field_height"
+            android:layout_height="wrap_content"
+            tools:text="07"
+            android:layout_marginStart="@dimen/field_height"
+            android:layout_marginEnd="@dimen/field_height"
+            android:layout_marginTop="@dimen/field_height"
+            android:background="@drawable/border_wite"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+        </TextView>
+
+    </FrameLayout>
+
+</FrameLayout>
